@@ -14,6 +14,6 @@ class LeaderboardController(
 
     @GetMapping
     fun getLeaderboard(): List<GameResult> =
-        gameResultService.getGameResults().sortedWith(compareBy({ -it.score }, { it.timeInSeconds}))
+        gameResultService.getGameResults().sortedWith(compareBy({ -it.score }, { it.timeInSeconds})) //Dieser Kommentsar dient nur, um einen weiteren Commit zu erzeugen, damit ich den richtigen Namen und die richtige Email in Git verwenden kann
 
 }
